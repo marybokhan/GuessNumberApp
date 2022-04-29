@@ -6,5 +6,8 @@ let package = Package(
     name: "GuessNumberApp",
     targets: [
         .executableTarget(name: "GuessNumberApp"),
+        .testTarget(
+            name: "GuessNumberAppTests",
+            dependencies: ["GuessNumberApp"])
     ]
 )
